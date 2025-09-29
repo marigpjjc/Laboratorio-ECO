@@ -1,0 +1,250 @@
+#screen1 {
+  animation: slideInFromLeft 0.6s ease-out;
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #333;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#screen1 h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-out 0.3s;
+  animation-fill-mode: both;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#screen1 p {
+  font-size: 1.2rem;
+  animation: fadeIn 1s ease-out 0.6s;
+  animation-fill-mode: both;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.stats-section, .summary-section, .recent-section {
+  background: rgba(255, 255, 255, 0.9);
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stat-card {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border-left: 4px solid #6c63ff;
+}
+
+.stat-card h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.stat-card div {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+.category-item, .order-item {
+  background: #e8f4f8;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border-left: 3px solid #6c63ff;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.waiting-message {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 2rem;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* screen2.css */
+
+#screen2 {
+  animation: slideInFromRight 0.6s ease-out;
+  background: linear-gradient(to right, #89f7fe, #66a6ff);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #333;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#screen2 h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-out 0.3s;
+  animation-fill-mode: both;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#screen2 p {
+  font-size: 1.2rem;
+  animation: fadeIn 1s ease-out 0.6s;
+  animation-fill-mode: both;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.analysis-section, .detailed-section, .navigation-section {
+  background: rgba(255, 255, 255, 0.9);
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.analysis-card {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #66a6ff;
+}
+
+.analysis-card h4 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.range-item, .user-item, .product-item {
+  background: #e8f4f8;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border-left: 3px solid #66a6ff;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.product-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category {
+  background: #6c63ff;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.user {
+  background: #28a745;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.navigation-section {
+  text-align: center;
+}
+
+.navigation-section button {
+  margin: 0.5rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#go-screen-back {
+  background-color: #6c63ff;
+  color: white;
+}
+
+#go-screen-back:hover {
+  background-color: #5848e5;
+  transform: scale(1.05);
+}
+
+#refresh-data {
+  background-color: #28a745;
+  color: white;
+}
+
+#refresh-data:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,49 @@
+### Products - get all
+GET http://localhost:5050/products
+
+### Products - price < 50
+GET http://localhost:5050/products/price-lt-50
+
+### Products - price > 30 and category Electronics
+GET http://localhost:5050/products/price-gt-30-category-electronics
+
+### Products - pagination (first 10)
+GET http://localhost:5050/products/paginated?limit=10&offset=0
+
+### Products - by user
+GET http://localhost:5050/users/1/products
+
+### Users - only username and email
+GET http://localhost:5050/users
+
+### Orders - ordered by created_at desc
+GET http://localhost:5050/orders
+
+### Posts - title contains 'tutorial'
+GET http://localhost:5050/posts/search/tutorial
+
+## install REST Client or humao.rest-client to execute this
+
+GET http://localhost:5050/users
+
+###
+
+POST http://localhost:5050/users
+Content-Type: application/json
+
+{
+    "name": "John Doe"
+}
+
+### 
+
+PATCH http://localhost:5050/users/0bf147d2-5058-4267-b7f7-eb40f8bfdb92
+Content-Type: application/json
+
+{
+    "name": "Jane Doe"
+}
+
+###
+
+DELETE http://localhost:5050/users/0bf147d2-5058-4267-b7f7-eb40f8bfdb92
