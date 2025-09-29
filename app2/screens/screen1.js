@@ -4,11 +4,11 @@ export default function renderScreen1() {
   const app = document.getElementById("app");
   app.innerHTML = `
       <div id="screen1">
-        <h2>Laboratorio de Base de Datos - App 2</h2>
+        <h2>Screen 1 - App 2</h2>
         <p>Vista de estadísticas y resumen de datos</p>
         
         <div class="stats-section">
-          <h3>📊 Estadísticas Generales</h3>
+          <h3>Estadísticas Generales</h3>
           <div class="stats-grid">
             <div class="stat-card">
               <h4>Total de Productos</h4>
@@ -30,12 +30,12 @@ export default function renderScreen1() {
         </div>
 
         <div class="summary-section">
-          <h3>📈 Resumen de Categorías de Productos</h3>
+          <h3>Resumen de Categorías de Productos</h3>
           <div id="categories-summary">Cargando...</div>
         </div>
 
         <div class="recent-section">
-          <h3>🕒 Órdenes Recientes</h3>
+          <h3>Órdenes Recientes</h3>
           <div id="recent-orders">Cargando...</div>
         </div>
 

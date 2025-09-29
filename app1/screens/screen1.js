@@ -4,7 +4,7 @@ export default function renderScreen1() {
   const app = document.getElementById("app");
   app.innerHTML = `
       <div id="screen1">
-        <h2>Laboratorio de Base de Datos - App 1</h2>
+        <h2>App 1</h2>
         
         <div class="section">
           <h3>1. Obtener todos los registros de una tabla</h3>
@@ -60,7 +60,6 @@ export default function renderScreen1() {
     </div>
       `;
 
-  // Event listeners
   document.getElementById("get-products-btn").addEventListener("click", getProducts);
   document.getElementById("get-products-lt50-btn").addEventListener("click", getProductsLt50);
   document.getElementById("get-users-btn").addEventListener("click", getUsers);
